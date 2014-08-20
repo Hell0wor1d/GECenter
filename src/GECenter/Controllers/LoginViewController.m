@@ -8,16 +8,12 @@
 
 #import "LoginViewController.h"
 #import "CreateAccountAndBlogViewController.h"
-//#import "AppDelegate.h"
 #import "WPNUXMainButton.h"
 #import "WPNUXSecondaryButton.h"
 #import "WPWalkthroughTextField.h"
 #import "WPWalkthroughOverlayView.h"
 #import "WPNUXUtility.h"
 #import "OrcViewController.h"
-static NSString *const ForgotPasswordDotComBaseUrl = @"https://wordpress.com";
-static NSString *const ForgotPasswordRelativeUrl = @"/wp-login.php?action=lostpassword&redirect_to=wordpress%3A%2F%2F";
-static NSString *const GenerateApplicationSpecificPasswordUrl = @"http://en.support.wordpress.com/security/two-step-authentication/#application-specific-passwords";
 
 @interface LoginViewController () <
 UITextFieldDelegate> {
@@ -194,13 +190,16 @@ CGFloat const GeneralWalkthroughStatusBarOffset = 20.0;
 
 - (void)helpButtonAction:(id)sender
 {
-    //    [WPMobileStats trackEventForSelfHostedAndWPCom:StatsEventNUXFirstWalkthroughClickedInfo];
-    //
-    //    SupportViewController *supportViewController = [[SupportViewController alloc] init];
-    //    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:supportViewController];
-    //    nc.navigationBar.translucent = NO;
-    //    nc.modalPresentationStyle = UIModalPresentationFormSheet;
-    //    [self.navigationController presentViewController:nc animated:YES completion:nil];
+    WPWalkthroughOverlayView *overlayView = [self baseLoginErrorOverlayView:@"对不起出错啦！"];
+    overlayView.primaryButtonText = NSLocalizedString(@"Enable Now", nil);
+    overlayView.secondaryButtonCompletionBlock = ^(WPWalkthroughOverlayView *overlayView){
+        [overlayView dismiss];
+        [self showHelpViewController:NO];
+    };
+    overlayView.primaryButtonCompletionBlock = ^(WPWalkthroughOverlayView *overlayView){
+        [overlayView dismiss];
+    };
+    [self.view addSubview:overlayView];
 }
 
 - (void)skipToCreateAction:(id)sender
@@ -221,35 +220,6 @@ CGFloat const GeneralWalkthroughStatusBarOffset = 20.0;
 {
     OrcViewController *orcViewController = [[OrcViewController alloc] init];
     [self.navigationController pushViewController:orcViewController animated:YES];
-//    WPWalkthroughOverlayView *overlayView = [self baseLoginErrorOverlayView:@"对不起出错啦！"];
-//    overlayView.primaryButtonText = NSLocalizedString(@"Enable Now", nil);
-//    overlayView.secondaryButtonCompletionBlock = ^(WPWalkthroughOverlayView *overlayView){
-//        //[WPMobileStats trackEventForSelfHostedAndWPCom:StatsEventNUXFirstWalkthroughClickedNeededHelpOnError properties:@{@"error_message": message}];
-//        
-//        [overlayView dismiss];
-//        [self showHelpViewController:NO];
-//    };
-//    overlayView.primaryButtonCompletionBlock = ^(WPWalkthroughOverlayView *overlayView){
-//        //[WPMobileStats trackEventForSelfHostedAndWPCom:StatsEventNUXFirstWalkthroughClickedEnableXMLRPCServices];
-//        
-//        [overlayView dismiss];
-//        
-//    };
-//    [self.view addSubview:overlayView];
-    
-    //    [self.view endEditing:YES];
-    //
-    //    if (![ReachabilityUtils isInternetReachable]) {
-    //        [ReachabilityUtils showAlertNoInternetConnection];
-    //        return;
-    //    }
-    //
-    //    if (![self areFieldsValid]) {
-    //        [self displayErrorMessages];
-    //        return;
-    //    }
-    //
-    //    [self signIn];
 }
 
 - (void)toggleSignInFormAction:(id)sender {
@@ -355,7 +325,7 @@ CGFloat const GeneralWalkthroughStatusBarOffset = 20.0;
     if (_siteUrlText == nil) {
         _siteUrlText = [[WPWalkthroughTextField alloc] initWithLeftViewImage:[UIImage imageNamed:@"icon-url-field"]];
         _siteUrlText.backgroundColor = [UIColor whiteColor];
-        _siteUrlText.placeholder = NSLocalizedString(@"Site Address (URL)", @"NUX First Walkthrough Page 2 Site Address Placeholder");
+        _siteUrlText.placeholder = NSLocalizedString(@"网址 (URL)", @"NUX First Walkthrough Page 2 Site Address Placeholder");
         _siteUrlText.font = [WPNUXUtility textFieldFont];
         _siteUrlText.adjustsFontSizeToFitWidth = YES;
         _siteUrlText.delegate = self;
@@ -704,113 +674,6 @@ CGFloat const GeneralWalkthroughStatusBarOffset = 20.0;
     //NSString *username = _usernameText.text;
     //NSString *password = _passwordText.text;
     _dotComSiteUrl = nil;
-    
-    //    if (_userIsDotCom) {
-    //        [WPMobileStats trackEventForSelfHostedAndWPCom:StatsEventNUXFirstWalkthroughSignedInWithoutUrl];
-    //        [self signInForWPComForUsername:username andPassword:password];
-    //        return;
-    //    }
-    //
-    //    [WPMobileStats trackEventForSelfHostedAndWPCom:StatsEventNUXFirstWalkthroughSignedInWithUrl];
-    //
-    //    if ([self isUrlWPCom:_siteUrlText.text]) {
-    //        [self signInForWPComForUsername:username andPassword:password];
-    //        return;
-    //    }
-    
-    //    void (^guessXMLRPCURLSuccess)(NSURL *) = ^(NSURL *xmlRPCURL) {
-    //        WordPressXMLRPCApi *api = [WordPressXMLRPCApi apiWithXMLRPCEndpoint:xmlRPCURL username:username password:password];
-    //
-    //        [api getBlogOptionsWithSuccess:^(id options){
-    //            [self setAuthenticating:NO withStatusMessage:nil];
-    //
-    //            if ([options objectForKey:@"wordpress.com"] != nil) {
-    //                NSDictionary *siteUrl = [options dictionaryForKey:@"home_url"];
-    //                _dotComSiteUrl = [siteUrl objectForKey:@"value"];
-    //                [self signInForWPComForUsername:username andPassword:password];
-    //            } else {
-    //                NSString *xmlrpc = [xmlRPCURL absoluteString];
-    //                [self createSelfHostedAccountAndBlogWithUsername:username password:password xmlrpc:xmlrpc options:options];
-    //            }
-    //        } failure:^(NSError *error){
-    //            [self setAuthenticating:NO withStatusMessage:nil];
-    //            [self displayRemoteError:error];
-    //        }];
-    //    };
-    
-    //    void (^guessXMLRPCURLFailure)(NSError *) = ^(NSError *error){
-    //        [self handleGuessXMLRPCURLFailure:error];
-    //    };
-    //
-    //    [WordPressXMLRPCApi guessXMLRPCURLForSite:_siteUrlText.text success:guessXMLRPCURLSuccess failure:guessXMLRPCURLFailure];
-}
-
-- (void)signInForWPComForUsername:(NSString *)username andPassword:(NSString *)password
-{
-    //    [WPMobileStats trackEventForSelfHostedAndWPCom:StatsEventNUXFirstWalkthroughSignedInForDotCom];
-    //
-    //    [self setAuthenticating:YES withStatusMessage:NSLocalizedString(@"Connecting to WordPress.com", nil)];
-    //
-    //    WordPressComOAuthClient *client = [WordPressComOAuthClient client];
-    //    [client authenticateWithUsername:username
-    //                            password:password
-    //                             success:^(NSString *authToken) {
-    //                                 [self setAuthenticating:NO withStatusMessage:nil];
-    //                                 _userIsDotCom = YES;
-    //                                 [self createWordPressComAccountForUsername:username password:password authToken:authToken];
-    //                             } failure:^(NSError *error) {
-    //                                 [self setAuthenticating:NO withStatusMessage:nil];
-    //                                 [self displayRemoteError:error];
-    //                             }];
-}
-
-- (void)createWordPressComAccountForUsername:(NSString *)username password:(NSString *)password authToken:(NSString *)authToken
-{
-    //    [self setAuthenticating:YES withStatusMessage:NSLocalizedString(@"Getting account information", nil)];
-    //    WPAccount *account = [WPAccount createOrUpdateWordPressComAccountWithUsername:username password:password authToken:authToken];
-    //    if (![WPAccount defaultWordPressComAccount]) {
-    //        [WPAccount setDefaultWordPressComAccount:account];
-    //    }
-    //    [account syncBlogsWithSuccess:^{
-    //        [self setAuthenticating:NO withStatusMessage:nil];
-    //        [self dismiss];
-    //    } failure:^(NSError *error) {
-    //        [self setAuthenticating:NO withStatusMessage:nil];
-    //        [self displayRemoteError:error];
-    //    }];
-    //
-    //    NoteService *noteService = [[NoteService alloc] initWithManagedObjectContext:account.managedObjectContext];
-    //    [noteService fetchNewNotificationsWithSuccess:nil failure:nil];
-}
-
-- (void)displayRemoteError:(NSError *)error {
-    //    DDLogError(@"%@", error);
-    //    NSString *message = [error localizedDescription];
-    //    if (![[error domain] isEqualToString:WPXMLRPCFaultErrorDomain]) {
-    //        if ([message rangeOfString:@"application-specific"].location != NSNotFound) {
-    //            [self displayGenerateApplicationSpecificPasswordErrorMessage:message];
-    //        } else {
-    //            [self displayGenericErrorMessage:message];
-    //        }
-    //        return;
-    //    }
-    //    if ([error code] == 403) {
-    //        message = NSLocalizedString(@"Please try entering your login details again.", nil);
-    //    }
-    //
-    //    if ([[message trim] length] == 0) {
-    //        message = NSLocalizedString(@"Sign in failed. Please try again.", nil);
-    //    }
-    //
-    //    if ([error code] == 405) {
-    //        [self displayErrorMessageForXMLRPC:message];
-    //    } else {
-    //        if ([error code] == NSURLErrorBadURL) {
-    //            [self displayErrorMessageForBadUrl:message];
-    //        } else {
-    //            [self displayGenericErrorMessage:message];
-    //        }
-    //    }
 }
 
 - (void)keyboardWillShow:(NSNotification *)notification

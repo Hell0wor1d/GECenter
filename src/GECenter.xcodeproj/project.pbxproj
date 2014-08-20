@@ -10,7 +10,6 @@
 		0A63402F19A3958200F2CE5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63402E19A3958200F2CE5E /* Foundation.framework */; };
 		0A63403119A3958200F2CE5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63403019A3958200F2CE5E /* CoreGraphics.framework */; };
 		0A63403319A3958200F2CE5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63403219A3958200F2CE5E /* UIKit.framework */; };
-		0A63403919A3958200F2CE5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A63403719A3958200F2CE5E /* InfoPlist.strings */; };
 		0A63404119A3958200F2CE5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A63404019A3958200F2CE5E /* Images.xcassets */; };
 		0A63404819A3958200F2CE5E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63404719A3958200F2CE5E /* XCTest.framework */; };
 		0A63404919A3958200F2CE5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63402E19A3958200F2CE5E /* Foundation.framework */; };
@@ -20,13 +19,6 @@
 		0A6341B119A3961D00F2CE5E /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A63406F19A3961D00F2CE5E /* Contents.json */; };
 		0A6341B219A3961D00F2CE5E /* PEPhotoCropEditorBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A63407019A3961D00F2CE5E /* PEPhotoCropEditorBorder.png */; };
 		0A6341B319A3961D00F2CE5E /* PEPhotoCropEditorBorder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A63407119A3961D00F2CE5E /* PEPhotoCropEditorBorder@2x.png */; };
-		0A6341C419A3961D00F2CE5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A63409519A3961D00F2CE5E /* InfoPlist.strings */; };
-		0A6341C519A3961D00F2CE5E /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63409819A3961D00F2CE5E /* OpenSans-Bold.ttf */; };
-		0A6341C619A3961D00F2CE5E /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63409919A3961D00F2CE5E /* OpenSans-BoldItalic.ttf */; };
-		0A6341C719A3961D00F2CE5E /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63409A19A3961D00F2CE5E /* OpenSans-Italic.ttf */; };
-		0A6341C819A3961D00F2CE5E /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63409B19A3961D00F2CE5E /* OpenSans-Light.ttf */; };
-		0A6341C919A3961D00F2CE5E /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63409C19A3961D00F2CE5E /* OpenSans-LightItalic.ttf */; };
-		0A6341CA19A3961D00F2CE5E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63409D19A3961D00F2CE5E /* OpenSans-Regular.ttf */; };
 		0A63420C19A3973800F2CE5E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63420B19A3973800F2CE5E /* CFNetwork.framework */; };
 		0A63420E19A3974F00F2CE5E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63420D19A3974F00F2CE5E /* Security.framework */; };
 		0A63421019A3975E00F2CE5E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63420F19A3975E00F2CE5E /* QuartzCore.framework */; };
@@ -64,19 +56,20 @@
 		0A63435F19A39C8200F2CE5E /* WPNUXMainButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A63435219A39C8200F2CE5E /* WPNUXMainButton.m */; };
 		0A63436019A39C8200F2CE5E /* WPNUXPrimaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A63435419A39C8200F2CE5E /* WPNUXPrimaryButton.m */; };
 		0A63436119A39C8200F2CE5E /* WPNUXSecondaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A63435619A39C8200F2CE5E /* WPNUXSecondaryButton.m */; };
-		0A63436219A39C8200F2CE5E /* WPNUXUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A63435819A39C8200F2CE5E /* WPNUXUtility.m */; };
 		0A63436319A39C8200F2CE5E /* WPWalkthroughOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A63435A19A39C8200F2CE5E /* WPWalkthroughOverlayView.m */; };
 		0A63436419A39C8200F2CE5E /* WPWalkthroughTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A63435C19A39C8200F2CE5E /* WPWalkthroughTextField.m */; };
 		0A63436719A39CBA00F2CE5E /* KevAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A63436619A39CBA00F2CE5E /* KevAlertView.m */; };
 		0A63436A19A39F1500F2CE5E /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63420519A3964500F2CE5E /* libstdc++.6.0.9.dylib */; };
-		0A63440F19A3A01400F2CE5E /* build_dependencies.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0A63437019A3A01400F2CE5E /* build_dependencies.sh */; };
-		0A63441019A3A01400F2CE5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A63437119A3A01400F2CE5E /* InfoPlist.strings */; };
 		0A63441119A3A01400F2CE5E /* liblept.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63440619A3A01400F2CE5E /* liblept.a */; };
 		0A63441219A3A01400F2CE5E /* libtesseract_all.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A63440719A3A01400F2CE5E /* libtesseract_all.a */; };
-		0A63441319A3A01400F2CE5E /* README_howto_compile_libaries.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A63440819A3A01400F2CE5E /* README_howto_compile_libaries.md */; };
-		0A63441419A3A01400F2CE5E /* README_tesseract.md in Resources */ = {isa = PBXBuildFile; fileRef = 0A63440919A3A01400F2CE5E /* README_tesseract.md */; };
 		0A63441519A3A01400F2CE5E /* Tesseract.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A63440B19A3A01400F2CE5E /* Tesseract.mm */; };
-		0A63441619A3A01400F2CE5E /* TesseractOCR-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A63440C19A3A01400F2CE5E /* TesseractOCR-Info.plist */; };
+		0A63441E19A4DD1600F2CE5E /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63441819A4DD1600F2CE5E /* OpenSans-Bold.ttf */; };
+		0A63441F19A4DD1600F2CE5E /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63441919A4DD1600F2CE5E /* OpenSans-BoldItalic.ttf */; };
+		0A63442019A4DD1600F2CE5E /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63441A19A4DD1600F2CE5E /* OpenSans-Italic.ttf */; };
+		0A63442119A4DD1600F2CE5E /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63441B19A4DD1600F2CE5E /* OpenSans-Light.ttf */; };
+		0A63442219A4DD1600F2CE5E /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63441C19A4DD1600F2CE5E /* OpenSans-LightItalic.ttf */; };
+		0A63442319A4DD1600F2CE5E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A63441D19A4DD1600F2CE5E /* OpenSans-Regular.ttf */; };
+		0A84A4AA19A4DE6D00D28A70 /* WPNUXUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A84A4A919A4DE6D00D28A70 /* WPNUXUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +88,6 @@
 		0A63403019A3958200F2CE5E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0A63403219A3958200F2CE5E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0A63403619A3958200F2CE5E /* GECenter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GECenter-Info.plist"; sourceTree = "<group>"; };
-		0A63403819A3958200F2CE5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A63403A19A3958200F2CE5E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A63403C19A3958200F2CE5E /* GECenter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GECenter-Prefix.pch"; sourceTree = "<group>"; };
 		0A63403D19A3958200F2CE5E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,20 +144,13 @@
 		0A63408F19A3961D00F2CE5E /* UIImage+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
 		0A63409019A3961D00F2CE5E /* UILabel+SuggestSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SuggestSize.h"; sourceTree = "<group>"; };
 		0A63409119A3961D00F2CE5E /* UILabel+SuggestSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SuggestSize.m"; sourceTree = "<group>"; };
-		0A63409619A3961D00F2CE5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
-		0A63409819A3961D00F2CE5E /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		0A63409919A3961D00F2CE5E /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		0A63409A19A3961D00F2CE5E /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
-		0A63409B19A3961D00F2CE5E /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		0A63409C19A3961D00F2CE5E /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		0A63409D19A3961D00F2CE5E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		0A63420519A3964500F2CE5E /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		0A63420719A3964D00F2CE5E /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		0A63420919A3966200F2CE5E /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		0A63420B19A3973800F2CE5E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0A63420D19A3974F00F2CE5E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0A63420F19A3975E00F2CE5E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		0A63421119A3985500F2CE5E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = GECenter/tessdata; sourceTree = "<group>"; };
+		0A63421119A3985500F2CE5E /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		0A63421319A398FD00F2CE5E /* UIView+UIKeyboardExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIKeyboardExtension.h"; sourceTree = "<group>"; };
 		0A63421419A398FD00F2CE5E /* UIView+UIKeyboardExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIKeyboardExtension.m"; sourceTree = "<group>"; };
 		0A63421719A3990900F2CE5E /* CreateAccountAndBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountAndBlogViewController.h; sourceTree = "<group>"; };
@@ -186,8 +171,6 @@
 		0A63435419A39C8200F2CE5E /* WPNUXPrimaryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPNUXPrimaryButton.m; sourceTree = "<group>"; };
 		0A63435519A39C8200F2CE5E /* WPNUXSecondaryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPNUXSecondaryButton.h; sourceTree = "<group>"; };
 		0A63435619A39C8200F2CE5E /* WPNUXSecondaryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPNUXSecondaryButton.m; sourceTree = "<group>"; };
-		0A63435719A39C8200F2CE5E /* WPNUXUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPNUXUtility.h; sourceTree = "<group>"; };
-		0A63435819A39C8200F2CE5E /* WPNUXUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPNUXUtility.m; sourceTree = "<group>"; };
 		0A63435919A39C8200F2CE5E /* WPWalkthroughOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPWalkthroughOverlayView.h; sourceTree = "<group>"; };
 		0A63435A19A39C8200F2CE5E /* WPWalkthroughOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWalkthroughOverlayView.m; sourceTree = "<group>"; };
 		0A63435B19A39C8200F2CE5E /* WPWalkthroughTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPWalkthroughTextField.h; sourceTree = "<group>"; };
@@ -197,8 +180,6 @@
 		0A63436819A39F0700F2CE5E /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		0A63436B19A39F1D00F2CE5E /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		0A63436D19A39F2500F2CE5E /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
-		0A63437019A3A01400F2CE5E /* build_dependencies.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build_dependencies.sh; sourceTree = "<group>"; };
-		0A63437219A3A01400F2CE5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A63437519A3A01400F2CE5E /* allheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allheaders.h; sourceTree = "<group>"; };
 		0A63437619A3A01400F2CE5E /* alltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alltypes.h; sourceTree = "<group>"; };
 		0A63437719A3A01400F2CE5E /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
@@ -344,13 +325,17 @@
 		0A63440419A3A01400F2CE5E /* werdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = werdit.h; sourceTree = "<group>"; };
 		0A63440619A3A01400F2CE5E /* liblept.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblept.a; sourceTree = "<group>"; };
 		0A63440719A3A01400F2CE5E /* libtesseract_all.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtesseract_all.a; sourceTree = "<group>"; };
-		0A63440819A3A01400F2CE5E /* README_howto_compile_libaries.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README_howto_compile_libaries.md; sourceTree = "<group>"; };
-		0A63440919A3A01400F2CE5E /* README_tesseract.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README_tesseract.md; sourceTree = "<group>"; };
 		0A63440A19A3A01400F2CE5E /* Tesseract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tesseract.h; sourceTree = "<group>"; };
 		0A63440B19A3A01400F2CE5E /* Tesseract.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Tesseract.mm; sourceTree = "<group>"; };
-		0A63440C19A3A01400F2CE5E /* TesseractOCR-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TesseractOCR-Info.plist"; sourceTree = "<group>"; };
-		0A63440D19A3A01400F2CE5E /* TesseractOCR-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TesseractOCR-Prefix.pch"; sourceTree = "<group>"; };
 		0A63440E19A3A01400F2CE5E /* TesseractOCR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TesseractOCR.h; sourceTree = "<group>"; };
+		0A63441819A4DD1600F2CE5E /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		0A63441919A4DD1600F2CE5E /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0A63441A19A4DD1600F2CE5E /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		0A63441B19A4DD1600F2CE5E /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		0A63441C19A4DD1600F2CE5E /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		0A63441D19A4DD1600F2CE5E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		0A84A4A819A4DE6D00D28A70 /* WPNUXUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPNUXUtility.h; sourceTree = "<group>"; };
+		0A84A4A919A4DE6D00D28A70 /* WPNUXUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPNUXUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,10 +371,9 @@
 		0A63402219A3958200F2CE5E = {
 			isa = PBXGroup;
 			children = (
-				0A63436F19A3A01400F2CE5E /* TesseractOCR */,
 				0A63403419A3958200F2CE5E /* GECenter */,
 				0A63405D19A3961D00F2CE5E /* Camera */,
-				0A63421119A3985500F2CE5E /* tessdata */,
+				0A63436F19A3A01400F2CE5E /* TesseractOCR */,
 				0A63404D19A3958200F2CE5E /* GECenterTests */,
 				0A63402D19A3958200F2CE5E /* Frameworks */,
 				0A63402C19A3958200F2CE5E /* Products */,
@@ -428,14 +412,12 @@
 		0A63403419A3958200F2CE5E /* GECenter */ = {
 			isa = PBXGroup;
 			children = (
+				0A84A4A719A4DE6D00D28A70 /* utils */,
 				0A63434C19A39C8200F2CE5E /* Views */,
 				0A63421619A3990900F2CE5E /* Controllers */,
 				0A63407D19A3961D00F2CE5E /* Categories */,
-				0A63409419A3961D00F2CE5E /* en.lproj */,
-				0A63409719A3961D00F2CE5E /* fonts */,
 				0A63403D19A3958200F2CE5E /* AppDelegate.h */,
 				0A63403E19A3958200F2CE5E /* AppDelegate.m */,
-				0A63404019A3958200F2CE5E /* Images.xcassets */,
 				0A63403519A3958200F2CE5E /* Supporting Files */,
 			);
 			path = GECenter;
@@ -444,8 +426,10 @@
 		0A63403519A3958200F2CE5E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A63441719A4DD1600F2CE5E /* fonts */,
+				0A63421119A3985500F2CE5E /* tessdata */,
+				0A63404019A3958200F2CE5E /* Images.xcassets */,
 				0A63403619A3958200F2CE5E /* GECenter-Info.plist */,
-				0A63403719A3958200F2CE5E /* InfoPlist.strings */,
 				0A63403A19A3958200F2CE5E /* main.m */,
 				0A63403C19A3958200F2CE5E /* GECenter-Prefix.pch */,
 			);
@@ -565,27 +549,6 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		0A63409419A3961D00F2CE5E /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				0A63409519A3961D00F2CE5E /* InfoPlist.strings */,
-			);
-			path = en.lproj;
-			sourceTree = "<group>";
-		};
-		0A63409719A3961D00F2CE5E /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				0A63409819A3961D00F2CE5E /* OpenSans-Bold.ttf */,
-				0A63409919A3961D00F2CE5E /* OpenSans-BoldItalic.ttf */,
-				0A63409A19A3961D00F2CE5E /* OpenSans-Italic.ttf */,
-				0A63409B19A3961D00F2CE5E /* OpenSans-Light.ttf */,
-				0A63409C19A3961D00F2CE5E /* OpenSans-LightItalic.ttf */,
-				0A63409D19A3961D00F2CE5E /* OpenSans-Regular.ttf */,
-			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
 		0A63421619A3990900F2CE5E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -616,8 +579,6 @@
 				0A63435419A39C8200F2CE5E /* WPNUXPrimaryButton.m */,
 				0A63435519A39C8200F2CE5E /* WPNUXSecondaryButton.h */,
 				0A63435619A39C8200F2CE5E /* WPNUXSecondaryButton.m */,
-				0A63435719A39C8200F2CE5E /* WPNUXUtility.h */,
-				0A63435819A39C8200F2CE5E /* WPNUXUtility.m */,
 				0A63435919A39C8200F2CE5E /* WPWalkthroughOverlayView.h */,
 				0A63435A19A39C8200F2CE5E /* WPWalkthroughOverlayView.m */,
 				0A63435B19A39C8200F2CE5E /* WPWalkthroughTextField.h */,
@@ -629,16 +590,10 @@
 		0A63436F19A3A01400F2CE5E /* TesseractOCR */ = {
 			isa = PBXGroup;
 			children = (
-				0A63437019A3A01400F2CE5E /* build_dependencies.sh */,
-				0A63437119A3A01400F2CE5E /* InfoPlist.strings */,
 				0A63437319A3A01400F2CE5E /* include */,
 				0A63440519A3A01400F2CE5E /* lib */,
-				0A63440819A3A01400F2CE5E /* README_howto_compile_libaries.md */,
-				0A63440919A3A01400F2CE5E /* README_tesseract.md */,
 				0A63440A19A3A01400F2CE5E /* Tesseract.h */,
 				0A63440B19A3A01400F2CE5E /* Tesseract.mm */,
-				0A63440C19A3A01400F2CE5E /* TesseractOCR-Info.plist */,
-				0A63440D19A3A01400F2CE5E /* TesseractOCR-Prefix.pch */,
 				0A63440E19A3A01400F2CE5E /* TesseractOCR.h */,
 			);
 			name = TesseractOCR;
@@ -820,6 +775,28 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		0A63441719A4DD1600F2CE5E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0A63441819A4DD1600F2CE5E /* OpenSans-Bold.ttf */,
+				0A63441919A4DD1600F2CE5E /* OpenSans-BoldItalic.ttf */,
+				0A63441A19A4DD1600F2CE5E /* OpenSans-Italic.ttf */,
+				0A63441B19A4DD1600F2CE5E /* OpenSans-Light.ttf */,
+				0A63441C19A4DD1600F2CE5E /* OpenSans-LightItalic.ttf */,
+				0A63441D19A4DD1600F2CE5E /* OpenSans-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		0A84A4A719A4DE6D00D28A70 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				0A84A4A819A4DE6D00D28A70 /* WPNUXUtility.h */,
+				0A84A4A919A4DE6D00D28A70 /* WPNUXUtility.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -895,23 +872,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A63441619A3A01400F2CE5E /* TesseractOCR-Info.plist in Resources */,
-				0A63403919A3958200F2CE5E /* InfoPlist.strings in Resources */,
-				0A6341C419A3961D00F2CE5E /* InfoPlist.strings in Resources */,
-				0A6341C919A3961D00F2CE5E /* OpenSans-LightItalic.ttf in Resources */,
-				0A6341C519A3961D00F2CE5E /* OpenSans-Bold.ttf in Resources */,
-				0A63441019A3A01400F2CE5E /* InfoPlist.strings in Resources */,
-				0A6341C719A3961D00F2CE5E /* OpenSans-Italic.ttf in Resources */,
 				0A63404119A3958200F2CE5E /* Images.xcassets in Resources */,
+				0A63442319A4DD1600F2CE5E /* OpenSans-Regular.ttf in Resources */,
+				0A63442019A4DD1600F2CE5E /* OpenSans-Italic.ttf in Resources */,
 				0A6341B219A3961D00F2CE5E /* PEPhotoCropEditorBorder.png in Resources */,
+				0A63441E19A4DD1600F2CE5E /* OpenSans-Bold.ttf in Resources */,
+				0A63442219A4DD1600F2CE5E /* OpenSans-LightItalic.ttf in Resources */,
+				0A63441F19A4DD1600F2CE5E /* OpenSans-BoldItalic.ttf in Resources */,
 				0A63421219A3985500F2CE5E /* tessdata in Resources */,
-				0A63440F19A3A01400F2CE5E /* build_dependencies.sh in Resources */,
-				0A6341C619A3961D00F2CE5E /* OpenSans-BoldItalic.ttf in Resources */,
-				0A63441419A3A01400F2CE5E /* README_tesseract.md in Resources */,
+				0A63442119A4DD1600F2CE5E /* OpenSans-Light.ttf in Resources */,
 				0A6341B119A3961D00F2CE5E /* Contents.json in Resources */,
-				0A6341C819A3961D00F2CE5E /* OpenSans-Light.ttf in Resources */,
-				0A6341CA19A3961D00F2CE5E /* OpenSans-Regular.ttf in Resources */,
-				0A63441319A3A01400F2CE5E /* README_howto_compile_libaries.md in Resources */,
 				0A6341B319A3961D00F2CE5E /* PEPhotoCropEditorBorder@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -934,7 +904,6 @@
 				0A63431219A39C1B00F2CE5E /* CameraController.m in Sources */,
 				0A63431319A39C1B00F2CE5E /* CameraNavigationController.m in Sources */,
 				0A63431419A39C1B00F2CE5E /* CameraSessionManager.m in Sources */,
-				0A63436219A39C8200F2CE5E /* WPNUXUtility.m in Sources */,
 				0A63431519A39C1B00F2CE5E /* CameraSlider.m in Sources */,
 				0A63431619A39C1B00F2CE5E /* CameraCommon.m in Sources */,
 				0A63441519A3A01400F2CE5E /* Tesseract.mm in Sources */,
@@ -945,6 +914,7 @@
 				0A63431A19A39C1B00F2CE5E /* CropViewController.m in Sources */,
 				0A63431B19A39C1B00F2CE5E /* ResizeControl.m in Sources */,
 				0A63435F19A39C8200F2CE5E /* WPNUXMainButton.m in Sources */,
+				0A84A4AA19A4DE6D00D28A70 /* WPNUXUtility.m in Sources */,
 				0A63431C19A39C1B00F2CE5E /* UIImage+Crop.m in Sources */,
 				0A63431D19A39C1B00F2CE5E /* CreateAccountAndBlogViewController.m in Sources */,
 				0A63431E19A39C1B00F2CE5E /* LoginViewController.m in Sources */,
@@ -991,34 +961,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0A63403719A3958200F2CE5E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A63403819A3958200F2CE5E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		0A63405019A3958200F2CE5E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0A63405119A3958200F2CE5E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0A63409519A3961D00F2CE5E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A63409619A3961D00F2CE5E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0A63437119A3A01400F2CE5E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A63437219A3A01400F2CE5E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
